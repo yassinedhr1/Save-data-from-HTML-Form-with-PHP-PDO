@@ -1,0 +1,29 @@
+*{
+    font-family:sans-serif;
+    
+}
+input[type=text], textarea{
+width: 40%;
+padding: 12px;
+border:1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+input[type=submit]{
+    background-color: #0fb377;
+    color:white;
+    padding: 9px 17px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    
+}
+.container{
+    border-radius:5px;
+    background-color: #d7d1d1;
+    padding: 20px;
+    width: 60%;
+}
