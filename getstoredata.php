@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
 
     $fname = $_POST['fname'];
     $lastname = $_POST['lastname'];
-    $subject = $_POST['subject'];
+    $adress = $_POST['adress'];
 
 
     echo 'Firstname: ' . $fname . 'Lastname: ' . $lastname . 'Subject: ' . $subject;
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
         die("Error ! : " . $e->getMessage());
     }
 
-    $pdo->exec("INSERT INTO client(prenom,nom,adresse) VALUES ('$fname','$lastname','$subject')");
+    $pdo->exec("INSERT INTO client(fname,lastname,adress) VALUES ('$fname','$lastname','$adress')");
 
 
     unset($pdo);
