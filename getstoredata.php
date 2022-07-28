@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $adress = $_POST['adress'];
 
 
-    echo 'Firstname: ' . $fname . 'Lastname: ' . $lastname . 'Subject: ' . $subject;
+    echo 'Firstname: ' . $fname . 'Lastname: ' . $lastname . 'Adress: ' . $adress;
     try {
         $pdo = new PDO(DSN, USER, PASSWORD);
     }
