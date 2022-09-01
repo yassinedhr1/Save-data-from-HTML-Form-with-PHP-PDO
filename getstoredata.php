@@ -12,6 +12,8 @@ if (isset($_POST['submit'])) {
     echo 'Firstname: ' . $fname . 'Lastname: ' . $lastname . 'Adress: ' . $adress;
     try {
         $pdo = new PDO(DSN, USER, PASSWORD);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo "connection succeeded";
     }
     catch (PDOException $e) {
         die("Error ! : " . $e->getMessage());
